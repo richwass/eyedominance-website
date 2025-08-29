@@ -469,6 +469,22 @@ body {
     font-weight: bold;
 }
 
+/* Disclaimer */
+.disclaimer {
+    background: var(--warning-color);
+    color: var(--white);
+    padding: 20px;
+    margin: 40px 0 0 0;
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.disclaimer h4 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
 /* Footer */
 .footer {
     background: var(--dark-color);
