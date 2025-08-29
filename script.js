@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Auto-advance carousel
-    setInterval(nextSlide, 5000);
+    // Auto-advance disabled for better user control
+    // setInterval(nextSlide, 5000);
 });
 
 // Mobile menu toggle
