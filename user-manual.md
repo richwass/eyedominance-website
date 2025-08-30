@@ -224,7 +224,6 @@ Pay attention to how similar your right-hand and left-hand results are:
 - **Don't look at the phone screen** while pointing
 - **Don't change distance** between right and left hand tests  
 - **Don't rush** the marking process
-- **Don't test when tired** - fatigue can affect results
 
 ---
 
