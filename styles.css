@@ -132,6 +132,13 @@ body {
     animation: fadeInUp 0.8s ease;
 }
 
+.hero-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 30px;
+    display: block;
+}
+
 .hero-title {
     font-size: 3.5rem;
     font-weight: 700;
