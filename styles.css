@@ -1,16 +1,18 @@
 /* Global Styles */
 :root {
-    --primary-color: #007AFF;
-    --secondary-color: #5856D6;
-    --success-color: #34C759;
-    --warning-color: #FF9500;
-    --danger-color: #FF3B30;
-    --dark-color: #1C1C1E;
-    --gray-color: #8E8E93;
-    --light-gray: #F2F2F7;
+    --primary-color: #2563EB;        /* Professional blue */
+    --secondary-color: #1E40AF;      /* Deeper blue */
+    --success-color: #059669;        /* Calm teal-green */
+    --warning-color: #D97706;        /* Warm amber */
+    --danger-color: #DC2626;         /* Muted red */
+    --dark-color: #1F2937;           /* Sophisticated dark gray */
+    --gray-color: #6B7280;           /* Balanced medium gray */
+    --light-gray: #F9FAFB;           /* Clean off-white */
+    --accent-gray: #E5E7EB;          /* Subtle border gray */
+    --text-gray: #374151;            /* Readable text gray */
     --white: #FFFFFF;
     --max-width: 1200px;
-    --border-radius: 12px;
+    --border-radius: 8px;            /* Slightly less rounded for professional look */
     --transition: all 0.3s ease;
 }
 
@@ -23,7 +25,7 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
     line-height: 1.6;
-    color: var(--dark-color);
+    color: var(--text-gray);
     background: var(--white);
 }
 
@@ -41,7 +43,7 @@ body {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid var(--accent-gray);
     z-index: 1000;
     transition: var(--transition);
 }
@@ -95,7 +97,7 @@ body {
 
 .nav-cta:hover {
     background: var(--secondary-color);
-    transform: translateY(-2px);
+    transform: translateY(-1px);
 }
 
 .nav-mobile-toggle {
@@ -135,10 +137,7 @@ body {
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--dark-color);
 }
 
 .hero-subtitle {
@@ -171,8 +170,8 @@ body {
 
 .btn-primary:hover {
     background: var(--secondary-color);
-    transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(0, 122, 255, 0.3);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.2);
 }
 
 .btn-secondary {
@@ -210,9 +209,9 @@ body {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: 30px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(37, 99, 235, 0.2);
 }
 
 .phone-mockup img {
@@ -248,8 +247,8 @@ body {
 }
 
 .feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 .feature-icon {
@@ -383,10 +382,10 @@ body {
 }
 
 .comparison-card.highlighted {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: var(--primary-color);
     color: var(--white);
-    transform: scale(1.05);
-    box-shadow: 0 20px 40px rgba(0, 122, 255, 0.3);
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
 }
 
 .comparison-card h3 {
@@ -475,7 +474,7 @@ body {
 .disclaimer {
     background: var(--warning-color);
     color: var(--white);
-    padding: 20px;
+    padding: 24px;
     margin: 40px 0 0 0;
     border-radius: var(--border-radius);
     font-size: 0.9rem;
@@ -528,7 +527,7 @@ body {
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
     color: var(--gray-color);
 }
 
