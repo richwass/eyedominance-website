@@ -27,7 +27,7 @@ The Eye Dominance Test App provides a scientifically-based assessment of your ey
 - Uses scientific finger-pointing methodology validated in vision research
 - Provides quantitative measurements, not just "left" or "right"
 - Tracks changes over time with comprehensive history
-- Generates detailed reports you can share with coaches or professionals
+- Generates detailed reports you can share with coaches or specialists
 - Works entirely offline - your data stays private on your device
 
 ---
@@ -259,10 +259,10 @@ Generate comprehensive PDF reports containing:
 - Complete test history with dates and measurements
 - Trend visualization graphs
 - Aggregate statistical analysis
-- Professional formatting suitable for sharing
+- Clean formatting suitable for sharing
 
 ### Sharing Options
-- **Email**: Send reports to coaches, trainers, or vision professionals
+- **Email**: Send reports to coaches, trainers, or vision specialists
 - **Save to Files**: Store reports for your records
 - **Print**: Physical copies for reference
 - **Multiple formats**: Choose the best option for your needs
@@ -348,7 +348,7 @@ This app implements a digital version of pointing-based assessment, providing qu
 
 ## Conclusion
 
-The Eye Dominance Test App provides you with professional-grade eye dominance assessment in an easy-to-use mobile application. By following the guidelines in this manual, you can obtain accurate, meaningful results that help you better understand your visual system and optimize your performance in sports, hobbies, and daily activities.
+The Eye Dominance Test App provides you with scientifically-based eye dominance assessment in an easy-to-use mobile application. By following the guidelines in this manual, you can obtain accurate, meaningful results that help you better understand your visual system and optimize your performance in sports, hobbies, and daily activities.
 
 Remember that eye dominance is just one aspect of your visual system. If you have specific vision concerns or need professional assessment, always consult with an eye care professional.
 
