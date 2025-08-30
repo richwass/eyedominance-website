@@ -89,7 +89,7 @@ When you first open the app, you'll be asked for:
 **2. Right Hand Test**
 - Tester extends right arm and points directly at the camera lens
 - Keep pointing finger steady and straight
-- Look at the camera operator's face, NOT the phone screen
+- Look directly at the camera lens. Not your finger. Not the operator. Look continuously at the camera lens.
 - Camera operator taps the capture button when ready
 - Take photo when tester is pointing steadily
 
@@ -212,7 +212,7 @@ Pay attention to how similar your right-hand and left-hand results are:
 - **Natural stance**: Stand comfortably, don't strain
 - **Straight arm**: Extend arm naturally, don't over-reach
 - **Steady finger**: Point directly at camera lens, keep finger still
-- **Eye focus**: Look at camera operator's face, not the phone screen
+- **Eye focus**: Look directly at the camera lens. Not your finger. Not the operator. Look continuously at the camera lens.
 
 ### Marking Accuracy
 - **Zoom in**: Use pinch gestures for precise marking
