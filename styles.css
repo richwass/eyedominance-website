@@ -133,9 +133,9 @@ body {
 }
 
 .hero-logo {
-    width: 120px;
+    width: 360px;
     height: auto;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     display: block;
 }
 
@@ -272,6 +272,32 @@ body {
 .feature-card p {
     color: var(--gray-color);
     line-height: 1.6;
+}
+
+/* Eye Dominance Measurement Techniques */
+.measurement-techniques {
+    padding: 80px 20px;
+    background: var(--white);
+}
+
+.infographic-container {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.infographic {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.infographic-caption {
+    margin-top: 20px;
+    color: var(--gray-color);
+    font-style: italic;
+    text-align: center;
+    font-size: 0.9rem;
 }
 
 /* How It Works Carousel */
