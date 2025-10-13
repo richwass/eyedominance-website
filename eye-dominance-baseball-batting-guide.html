@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Dominance in Baseball Batting - Complete Guide</title>
+    <meta name="description" content="Comprehensive guide to managing eye dominance in baseball batting including stance, pitch recognition, swing mechanics, and training methods for all skill levels.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:title" content="Eye Dominance in Baseball Batting Guide">
+    <meta property="og:description" content="Expert guidance for optimizing batting performance based on eye dominance">
+    <meta property="og:image" content="og-image.png">
+    <meta property="og:url" content="https://eyedominance.app/eye-dominance-baseball-batting-guide.html">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/icon-nav.png" alt="Eye Dominance Test Logo" class="logo-icon">
+                <span class="logo-text">EyeDominanceApp</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#features">Features</a>
+                <a href="instructions.html">Measuring Eye Dominance</a>
+                <div class="nav-dropdown">
+                    <a href="sports.html" class="nav-dropdown-toggle">Sport-Specific Guides ▼</a>
+                    <div class="nav-dropdown-content">
+                        <a href="sports.html">Overview</a>
+                        <a href="eye-dominance-shooting-guide.html">Shooting Sports</a>
+                        <a href="eye-dominance-golf-guide.html">Golf</a>
+                        <a href="eye-dominance-baseball-batting-guide.html">Baseball Batting</a>
+                        <a href="eye-dominance-photography-guide.html">Photography</a>
+                    </div>
+                </div>
+                <a href="background.html">Science</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSezb7sPiHzRFa6yuuO0zooY3I8d7tGR6Q-0l8uLQqRoosyrDw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="nav-cta">Request Beta Access</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="guide-content">
+        <div class="container">
+            <div id="markdown-content">
+                <!-- Markdown content will be loaded here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>EyeDominanceApp</h4>
+                    <p>Camera-based eye dominance assessment.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="instructions.html">Measuring Eye Dominance</a></li>
+                        <li><a href="sports.html">Using in Sports</a></li>
+                        <li><a href="eye-dominance-shooting-guide.html">Shooting Sports Guide</a></li>
+                        <li><a href="eye-dominance-golf-guide.html">Golf Guide</a></li>
+                        <li><a href="eye-dominance-baseball-batting-guide.html">Baseball Batting Guide</a></li>
+                        <li><a href="eye-dominance-photography-guide.html">Photography Guide</a></li>
+                        <li><a href="background.html">Scientific Background</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="mailto:support@eyedominance.app">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EyeDominanceApp. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        async function loadMarkdown() {
+            try {
+                const response = await fetch('eye-dominance-baseball-batting-guide.md');
+                const markdown = await response.text();
+                const html = marked.parse(markdown);
+                document.getElementById('markdown-content').innerHTML = html;
+            } catch (error) {
+                console.error('Error loading markdown:', error);
+                document.getElementById('markdown-content').innerHTML = '<p>Error loading content. Please try again later.</p>';
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', loadMarkdown);
+    </script>
+</body>
+</html>
