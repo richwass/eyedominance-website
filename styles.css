@@ -1,3 +1,157 @@
+/* Launch Announcement Styles */
+.hero-announcement {
+    background: linear-gradient(135deg, #007AFF, #5856D6);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+    animation: slideInFromTop 0.6s ease-out, launchPulse 2s ease-in-out 0.6s infinite alternate;
+    display: inline-block;
+}
+
+@keyframes slideInFromTop {
+    from { 
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to { 
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes launchPulse {
+    from { box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3); }
+    to { box-shadow: 0 6px 20px rgba(0, 122, 255, 0.5); }
+}
+
+/* Download Platforms Styles */
+.download-platforms {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.platform-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.platform-card.ios-available {
+    border-color: #007AFF;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 122, 255, 0.15);
+}
+
+.platform-card.android-waitlist {
+    opacity: 0.95;
+    border-color: var(--accent-gray);
+}
+
+.platform-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.ios-available {
+    border-color: var(--success-color);
+}
+
+.ios-available:hover {
+    border-color: var(--primary-color);
+}
+
+.android-waitlist {
+    border-color: var(--accent-gray);
+}
+
+.platform-header {
+    margin-bottom: 20px;
+}
+
+.platform-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.platform-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.platform-status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.platform-status.available {
+    background: var(--success-color);
+    color: var(--white);
+}
+
+.platform-status.coming-soon {
+    background: var(--warning-color);
+    color: var(--white);
+}
+
+.platform-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 15px 0;
+}
+
+.btn-platform {
+    width: 100%;
+    margin: 20px 0;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+}
+
+.platform-features {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.platform-features .feature {
+    color: var(--gray-color);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .download-platforms {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .platform-card {
+        padding: 20px;
+    }
+    
+    .hero-announcement {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
 /* Global Styles */
 :root {
     --primary-color: #2563EB;        /* Professional blue */

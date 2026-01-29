@@ -78,3 +78,62 @@ window.addEventListener('scroll', function() {
         navbar.style.boxShadow = 'none';
     }
 });
+
+// Enhanced analytics for download tracking
+document.addEventListener('DOMContentLoaded', function() {
+    // Track iOS downloads
+    const iOSButtons = document.querySelectorAll('a[href*="apps.apple.com"]');
+    iOSButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Additional tracking for iOS downloads
+            console.log('iOS download tracked');
+            
+            // Track button location
+            const buttonLocation = this.closest('.hero') ? 'Hero' : 
+                                  this.closest('.navbar') ? 'Navigation' :
+                                  this.closest('#download') ? 'Download Section' : 'Other';
+            
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'download_app', {
+                    'platform': 'iOS',
+                    'location': buttonLocation,
+                    'value': 1.99
+                });
+            }
+        });
+    });
+    
+    // Track Android waitlist signups
+    const androidButtons = document.querySelectorAll('a[href*="docs.google.com/forms"]');
+    androidButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            console.log('Android waitlist signup tracked');
+            
+            const buttonLocation = this.closest('.hero') ? 'Hero' : 
+                                  this.closest('#download') ? 'Download Section' : 'Other';
+            
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'join_waitlist', {
+                    'platform': 'Android',
+                    'location': buttonLocation
+                });
+            }
+        });
+    });
+});
+
+// Launch celebration animation
+document.addEventListener('DOMContentLoaded', function() {
+    const announcement = document.querySelector('.hero-announcement');
+    if (announcement) {
+        // Add a subtle entrance animation
+        announcement.style.opacity = '0';
+        announcement.style.transform = 'translateY(-20px)';
+        
+        setTimeout(() => {
+            announcement.style.transition = 'all 0.6s ease';
+            announcement.style.opacity = '1';
+            announcement.style.transform = 'translateY(0)';
+        }, 500);
+    }
+});
